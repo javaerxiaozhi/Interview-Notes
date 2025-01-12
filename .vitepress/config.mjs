@@ -1,8 +1,16 @@
 import { defineConfig } from 'vitepress'
-import { set_sidebar } from "../utils/auto-gen-sidebar.mjs";
+import { set_sidebar } from "../utils/auto-gen-sidebar.mjs"; //自动生成侧边栏脚本
+import { withMermaid } from "vitepress-plugin-mermaid"; // 一个可以使用md语法绘制流程图，饼状图的md扩展
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default withMermaid({
+  mermaid: {
+    // refer https://mermaid.js.org/config/setup/modules/mermaidAPI.html#mermaidapi-configuration-defaults for options
+  },
+  mermaidPlugin: {
+    class: "mermaid my-class", // set additional css classes for parent container
+  },
+  lang: 'zh-CN',
   base: "/Interview-Notes/",
   title: "Javaer小智的面试笔记",
   description: "A VitePress Site",
@@ -87,4 +95,4 @@ export default defineConfig({
       copyright: 'Copyright@ 2022 Javaer XiaoZhi'
     }
   }
-})
+});
