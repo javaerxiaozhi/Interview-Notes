@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 import { set_sidebar } from "../utils/auto-gen-sidebar.mjs";
 
 // https://vitepress.dev/reference/site-config
-base: "/Interview-Notes/"
 export default defineConfig({
+  base: "/Interview-Notes/",
   title: "Javaer小智的面试笔记",
   description: "A VitePress Site",
   head: [["link", { rel: "icon", href: "/Interview-Notes/img/开发中.png" }]],
