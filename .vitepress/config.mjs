@@ -50,10 +50,16 @@ export default withMermaid({
           { text: '进阶算法', link: 'docs/algorithm/进阶算法' }
         ] 
       },
-      { 
-        text: 'MarkdownExamples', 
-        link: '/markdown-examples' 
-      }
+      {
+        text: '其他',
+        items: [
+          { text: 'VitePress + Github Pages搭建博客', link: 'docs/other/VitePress + Github Pages搭建博客' }
+        ]
+      },
+      // { 
+      //   text: 'MarkdownExamples', 
+      //   link: '/markdown-examples' 
+      // }
     ],
 
     // sidebar: [
