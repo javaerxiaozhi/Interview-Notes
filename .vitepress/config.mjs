@@ -12,7 +12,7 @@ export default withMermaid({
   },
   lang: 'zh-CN',
   base: "/Interview-Notes/",
-  title: "Javaer小智的面试笔记",
+  title: "Javaer小智的编程笔记",
   description: "A VitePress Site",
   head: [["link", { rel: "icon", href: "/Interview-Notes/img/开发中.png" }]],
   themeConfig: {
@@ -94,7 +94,7 @@ export default withMermaid({
     // },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/javaerxiaozhi/Interview-Notes' }
     ],
 
     footer: {

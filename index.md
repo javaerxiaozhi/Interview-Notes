@@ -3,19 +3,19 @@
 layout: home
 
 hero:
-  name: "Javaer小智的面试笔记"
-  text: "面试笔记"
+  name: "Javaer小智的编程笔记"
+  text: "个人笔记"
   tagline: 好记性不如烂笔头
   image: 
     src: /img/开发中.png
     alt: 首页logo
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 建站原因
+      link: /reason
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 关于我
+      link: /about
 
 features:
   - title: Feature A
