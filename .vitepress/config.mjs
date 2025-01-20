@@ -97,8 +97,8 @@ export default withMermaid({
       { icon: 'github', link: 'https://github.com/javaerxiaozhi/Interview-Notes' }
     ],
 
-    footer: {
-      copyright: 'Copyright@ 2022 Javaer XiaoZhi'
-    }
+    // footer: {
+    //   copyright: 'Copyright@ 2022 Javaer XiaoZhi'
+    // }
   }
 });
