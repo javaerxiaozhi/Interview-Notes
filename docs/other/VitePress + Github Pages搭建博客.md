@@ -8,9 +8,13 @@
 
 ![image-20250120210504091](imgs/image-20250120210504091.png)
 
+vitepress官网地址：https://vitepress.dev/
+
+博客地址：https://javaerxiaozhi.github.io/Interview-Notes/
+
 ## 准备工作
 
-vitepress官网地址：https://vitepress.dev/
+
 
 ## 插件
 
