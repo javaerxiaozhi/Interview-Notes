@@ -1,20 +1,128 @@
 import { defineConfig } from 'vitepress'
 import { set_sidebar } from "../utils/auto-gen-sidebar.mjs"; //自动生成侧边栏脚本
 import { withMermaid } from "vitepress-plugin-mermaid"; // 一个可以使用md语法绘制流程图，饼状图的md扩展
+import mathjax3 from 'markdown-it-mathjax3'; // 数学公式显示
+
+const customElements = [
+	'mjx-container',
+    'mjx-assistive-mml',
+	'math',
+	'maction',
+	'maligngroup',
+	'malignmark',
+	'menclose',
+	'merror',
+	'mfenced',
+	'mfrac',
+	'mi',
+	'mlongdiv',
+	'mmultiscripts',
+	'mn',
+	'mo',
+	'mover',
+	'mpadded',
+	'mphantom',
+	'mroot',
+	'mrow',
+	'ms',
+	'mscarries',
+	'mscarry',
+	'mscarries',
+	'msgroup',
+	'mstack',
+	'mlongdiv',
+	'msline',
+	'mstack',
+	'mspace',
+	'msqrt',
+	'msrow',
+	'mstack',
+	'mstack',
+	'mstyle',
+	'msub',
+	'msup',
+	'msubsup',
+	'mtable',
+	'mtd',
+	'mtext',
+	'mtr',
+	'munder',
+	'munderover',
+	'semantics',
+	'math',
+	'mi',
+	'mn',
+	'mo',
+	'ms',
+	'mspace',
+	'mtext',
+	'menclose',
+	'merror',
+	'mfenced',
+	'mfrac',
+	'mpadded',
+	'mphantom',
+	'mroot',
+	'mrow',
+	'msqrt',
+	'mstyle',
+	'mmultiscripts',
+	'mover',
+	'mprescripts',
+	'msub',
+	'msubsup',
+	'msup',
+	'munder',
+	'munderover',
+	'none',
+	'maligngroup',
+	'malignmark',
+	'mtable',
+	'mtd',
+	'mtr',
+	'mlongdiv',
+	'mscarries',
+	'mscarry',
+	'msgroup',
+	'msline',
+	'msrow',
+	'mstack',
+	'maction',
+	'semantics',
+	'annotation',
+	'annotation-xml',
+];
 
 // https://vitepress.dev/reference/site-config
 export default withMermaid({
+  markdown: {
+    config: (md) => {
+      md.use(mathjax3);
+    },
+  },
+  
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: (tag) => customElements.includes(tag),
+      },
+    },
+  },
+
   mermaid: {
     // refer https://mermaid.js.org/config/setup/modules/mermaidAPI.html#mermaidapi-configuration-defaults for options
   },
+
   mermaidPlugin: {
     class: "mermaid my-class", // set additional css classes for parent container
   },
+
   lang: 'zh-CN',
   base: "/Interview-Notes/",
   title: "Javaer小智的编程笔记",
   description: "A VitePress Site",
   head: [["link", { rel: "icon", href: "/Interview-Notes/img/开发中.png" }]],
+  
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/img/开发中.png',
