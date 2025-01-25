@@ -95,6 +95,15 @@ const customElements = [
 
 // https://vitepress.dev/reference/site-config
 export default withMermaid({
+  optimizeDeps: {
+    include: [
+      'dayjs',
+      'debug',
+      'cytoscape-cose-bilkent',
+      'cytoscape',
+      '@braintree/sanitize-url'
+    ],
+  },
   markdown: {
     config: (md) => {
       md.use(mathjax3);

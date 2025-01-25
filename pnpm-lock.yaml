@@ -8,6 +8,21 @@ importers:
 
   .:
     dependencies:
+      '@braintree/sanitize-url':
+        specifier: ^1.0.0
+        version: 1.0.0
+      cytoscape:
+        specifier: ^3.19.1
+        version: 3.30.4
+      cytoscape-cose-bilkent:
+        specifier: ^3.0.0
+        version: 3.0.4(cytoscape@3.30.4)
+      dayjs:
+        specifier: ^1.10.4
+        version: 1.11.13
+      debug:
+        specifier: ^4.3.2
+        version: 4.4.0
       markdown-it-katex:
         specifier: ^2.0.3
         version: 2.0.3
@@ -121,6 +136,10 @@ packages:
   '@babel/types@7.26.5':
     resolution: {integrity: sha512-L6mZmwFDK6Cjh1nRCLXpa6no13ZIioJDz7mdkzHv399pThrTa/k0nUlNaenOeh2kWu/iaOQYElEpKPUswUa9Vg==, tarball: https://registry.npmmirror.com/@babel/types/-/types-7.26.5.tgz}
     engines: {node: '>=6.9.0'}
+
+  '@braintree/sanitize-url@1.0.0':
+    resolution: {integrity: sha512-WGdsUlyx3TucDlo1HCulzT6r399iJPeVeHF4RX4NiwVVFq4hBYG9iVs5rOcxqTe6z80dKJZ1cD1OfvDCLtOThw==, tarball: https://registry.npmmirror.com/@braintree/sanitize-url/-/sanitize-url-1.0.0.tgz}
+    deprecated: Potential XSS vulnerability patched in v6.0.0.
 
   '@braintree/sanitize-url@6.0.4':
     resolution: {integrity: sha512-s3jaWicZd0pkP0jf5ysyHUI/RE7MHos6qlToFcGWXVp+ykHOy77OUMrfbgJ9it2C5bow7OIQwYYaHjk9XlBQ2A==, tarball: https://registry.npmmirror.com/@braintree/sanitize-url/-/sanitize-url-6.0.4.tgz}
@@ -757,6 +776,11 @@ packages:
   csstype@3.1.3:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==, tarball: https://registry.npmmirror.com/csstype/-/csstype-3.1.3.tgz}
 
+  cytoscape-cose-bilkent@3.0.4:
+    resolution: {integrity: sha512-oAh/ga1fxJ7j9bBjjfGRlpTAKVFddYu+HfwJaebLpZTc0LUnnnHe/Ng3aiWj1Ammc301+RDTSXT6ecpIz4dSMQ==, tarball: https://registry.npmmirror.com/cytoscape-cose-bilkent/-/cytoscape-cose-bilkent-3.0.4.tgz}
+    peerDependencies:
+      cytoscape: ^2.4.0 || ^3.0.0
+
   cytoscape-cose-bilkent@4.1.0:
     resolution: {integrity: sha512-wgQlVIUJF13Quxiv5e1gstZ08rnZj2XaLHGoFMYXz7SkNfCDOOteKBE6SYRfA9WxxI/iBc3ajfDoc6hb/MRAHQ==, tarball: https://registry.npmmirror.com/cytoscape-cose-bilkent/-/cytoscape-cose-bilkent-4.1.0.tgz}
     peerDependencies:
@@ -1057,6 +1081,9 @@ packages:
 
   layout-base@2.0.1:
     resolution: {integrity: sha512-dp3s92+uNI1hWIpPGH3jK2kxE2lMjdXdr+DH8ynZHpd6PUlH6x6cbuXnoMmiNumznqaNO31xu9e79F0uuZ0JFg==, tarball: https://registry.npmmirror.com/layout-base/-/layout-base-2.0.1.tgz}
+
+  linkedlist-js@1.3.0:
+    resolution: {integrity: sha512-YwgG4Et8dJF04nsn9YuyrydUJvwmJHOQo7PzxvkT09NTgQ1yC+vXHGBolo48rTjAItIYR7YWIXh6xZsavCBSvQ==, tarball: https://registry.npmmirror.com/linkedlist-js/-/linkedlist-js-1.3.0.tgz}
 
   local-pkg@0.5.1:
     resolution: {integrity: sha512-9rrA30MRRP3gBD3HTGnC6cDFpaE1kVDWxWgqWJUN0RvDNAo+Nz/9GxB+nHOH0ifbVFy0hSA1V6vFDvnx54lTEQ==, tarball: https://registry.npmmirror.com/local-pkg/-/local-pkg-0.5.1.tgz}
@@ -1546,6 +1573,8 @@ snapshots:
     dependencies:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
+
+  '@braintree/sanitize-url@1.0.0': {}
 
   '@braintree/sanitize-url@6.0.4':
     optional: true
@@ -2146,6 +2175,11 @@ snapshots:
 
   csstype@3.1.3: {}
 
+  cytoscape-cose-bilkent@3.0.4(cytoscape@3.30.4):
+    dependencies:
+      cytoscape: 3.30.4
+      linkedlist-js: 1.3.0
+
   cytoscape-cose-bilkent@4.1.0(cytoscape@3.30.4):
     dependencies:
       cose-base: 1.0.3
@@ -2500,6 +2534,8 @@ snapshots:
   layout-base@1.0.2: {}
 
   layout-base@2.0.1: {}
+
+  linkedlist-js@1.3.0: {}
 
   local-pkg@0.5.1:
     dependencies:

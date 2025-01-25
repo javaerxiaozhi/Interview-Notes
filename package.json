@@ -10,6 +10,11 @@
     "preview": "vitepress preview"
   },
   "dependencies": {
+    "@braintree/sanitize-url": "^1.0.0",
+    "dayjs": "^1.10.4",
+    "debug": "^4.3.2",
+    "cytoscape": "^3.19.1",
+    "cytoscape-cose-bilkent": "^3.0.0",
     "markdown-it-katex": "^2.0.3",
     "markdown-it-mathjax3": "^4.3.2"
   }
