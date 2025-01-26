@@ -129,13 +129,15 @@ export default withMermaid({
   lang: 'zh-CN',
   base: "/Interview-Notes/",
   title: "Javaer小智的编程笔记",
-  description: "A VitePress Site",
+  description: "Javaer小智的编程笔记",
   head: [["link", { rel: "icon", href: "/Interview-Notes/img/开发中.png" }]],
+  lastUpdated: true, // 显示最后更新时间
+  cleanUrls: true, // VitePress 将从 URL 中删除尾随.html
   
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/img/开发中.png',
-    outlineTitle: '页面导航', // 侧边栏标题
+    outlineTitle: '页面导航', // 右侧侧边栏说明
     outline: [1, 6], // 根据标题生成侧边栏深度
     aside: "left", // 设置右侧侧边栏在左侧显示
     search: { //设置搜索框
