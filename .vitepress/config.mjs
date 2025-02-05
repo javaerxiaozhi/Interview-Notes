@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 import { set_sidebar } from "../utils/auto-gen-sidebar.mjs"; //自动生成侧边栏脚本
 import { withMermaid } from "vitepress-plugin-mermaid"; // 一个可以使用md语法绘制流程图，饼状图的md扩展
 import mathjax3 from 'markdown-it-mathjax3'; // 数学公式显示
+// import { Sitemap } from 'vite-plugin-sitemap' // 生成sitemap.xml
 
 const customElements = [
 	'mjx-container',
@@ -95,6 +96,13 @@ const customElements = [
 
 // https://vitepress.dev/reference/site-config
 export default withMermaid({
+  // plugins: [
+  //   Sitemap({
+  //     hostname: 'https://javaerxiaozhi.github.io/Interview-Notes/',
+  //     exclude: ['/404'],
+  //     generateRobotsTxt: true // 同时生成 robots.txt
+  //   })
+  // ],
   optimizeDeps: {
     include: [
       'dayjs',

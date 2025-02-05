@@ -33,6 +33,9 @@ importers:
       mermaid:
         specifier: ^11.4.1
         version: 11.4.1
+      vite-plugin-sitemap:
+        specifier: ^0.7.1
+        version: 0.7.1
       vitepress:
         specifier: ^1.5.0
         version: 1.5.0(@algolia/client-search@5.19.0)(markdown-it-mathjax3@4.3.2)(postcss@8.4.49)(search-insights@2.17.3)
@@ -1341,6 +1344,9 @@ packages:
 
   vfile@6.0.3:
     resolution: {integrity: sha512-KzIbH/9tXat2u30jf+smMwFCsno4wHVdNmzFyL+T/L3UGqqk6JKfVqOFOZEpZSHADH1k40ab6NUIXZq422ov3Q==, tarball: https://registry.npmmirror.com/vfile/-/vfile-6.0.3.tgz}
+
+  vite-plugin-sitemap@0.7.1:
+    resolution: {integrity: sha512-4NRTkiWytLuAmcikckrLcLl9iYA20+5v6l8XshcOrzxH1WR8H0O3S6sTQYfjMrE8su/LG6Y0cTodvOdcOIxaLw==, tarball: https://registry.npmmirror.com/vite-plugin-sitemap/-/vite-plugin-sitemap-0.7.1.tgz}
 
   vite@5.4.11:
     resolution: {integrity: sha512-c7jFQRklXua0mTzneGW9QVyxFjUgwcihC4bXEtujIo2ouWCe1Ajt/amn2PCxYnhYfd5k09JX3SB7OYWFKYqj8Q==, tarball: https://registry.npmmirror.com/vite/-/vite-5.4.11.tgz}
@@ -2847,6 +2853,8 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
       vfile-message: 4.0.2
+
+  vite-plugin-sitemap@0.7.1: {}
 
   vite@5.4.11:
     dependencies:
