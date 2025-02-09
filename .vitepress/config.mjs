@@ -168,13 +168,16 @@ export default withMermaid({
       }
     },
     nav: [
+      {
+        text: '面试总结',
+        link: '/docs/interview/'
+      },
       { 
         text: '数据结构与算法', 
         items: [
           { text: '数据结构', link: 'docs/algorithm/数据结构' },
-          { text: '基础算法', link: 'docs/algorithm/基础算法' },
           { text: '排序算法', link: 'docs/algorithm/排序算法' },
-          { text: '进阶算法', link: 'docs/algorithm/进阶算法' }
+          { text: '常见算法', link: 'docs/algorithm/常见算法' }
         ] 
       },
       {
@@ -202,23 +205,17 @@ export default withMermaid({
     // 第一个/front-end/react常常是nav的link，这个set_sidebar传递的参数是相对于根路径的文件夹路径，返回的是每个文件夹中文件的名称和链接
     // sidebar: { "/front-end/react": set_sidebar("front-end/react") },
 
-    // sidebar: { 
-    //   "/docs/algorithm/": [
-    //     {
-    //       text: '数据结构',
-    //       items: [
-    //         { text: '二叉树', link: '/docs/algorithm/data-struct/二叉树' },
-    //         { text: '数组', link: '/docs/algorithm/data-struct/数组' },
-    //       ]
-    //     },
-    //     {
-    //       text: '排序算法',
-    //       items: [
-    //         { text: '排序算法', link: '/docs/algorithm/sort/排序算法' }
-    //       ]
-    //     },
-    //   ]
-    // },
+    sidebar: { 
+      "/docs/interview/": [
+        {
+          text: 'Java基础',
+          collapsed: true,
+          items: [
+            { text: 'Java基础', link: '/docs/interview/Java基础' }
+          ]
+        }
+      ]
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/javaerxiaozhi/Interview-Notes' }
