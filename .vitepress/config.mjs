@@ -208,7 +208,7 @@ export default withMermaid({
     sidebar: { 
       "/docs/interview/": [
         {
-          text: 'Java基础',
+          text: 'Java',
           collapsed: true,
           items: [
             { text: 'Java基础', link: '/docs/interview/Java基础' }
