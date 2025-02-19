@@ -177,7 +177,7 @@ export default withMermaid({
         items: [
           { text: '数据结构', link: 'docs/algorithm/数据结构' },
           { text: '排序算法', link: 'docs/algorithm/排序算法' },
-          { text: '常见算法', link: 'docs/algorithm/常见算法' }
+          { text: '算法思想', link: 'docs/algorithm/常见算法' }
         ] 
       },
       {
