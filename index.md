@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Javaer小智的编程笔记"
   text: "个人笔记"
-  tagline: 好记性不如烂笔头
+  tagline: Where learning never stops
   image: 
     src: /img/开发中.png
     alt: 首页logo
@@ -18,12 +18,12 @@ hero:
       link: /about
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit  
+  - title: Knowledge grows when shared
+    details: 知识在分享中成长
+  - title: Think, Learn, Evolve
+    details: 思考、学习、进化
+  - title: Challenge today, conquer tomorrow
+    details: 挑战今天，征服明天  
 
 head:
   - - link
