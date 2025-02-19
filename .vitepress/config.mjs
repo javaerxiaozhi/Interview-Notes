@@ -172,6 +172,10 @@ export default withMermaid({
         text: '面试总结',
         link: '/docs/interview/'
       },
+      {
+        text: '项目总结',
+        link: '/docs/project/'
+      },
       { 
         text: '数据结构与算法', 
         items: [
@@ -212,6 +216,22 @@ export default withMermaid({
           collapsed: true,
           items: [
             { text: 'Java基础', link: '/docs/interview/Java基础' }
+          ]
+        }
+      ],
+      "/docs/project/": [
+        {
+          text: '前言',
+          collapsed: true,
+          items: [
+            { text: '前言', link: '/docs/project/index' }
+          ]
+        },
+        {
+          text: '优惠券系统',
+          collapsed: true,
+          items: [
+            { text: '优惠券系统', link: '/docs/project/优惠券系统' }
           ]
         }
       ]
