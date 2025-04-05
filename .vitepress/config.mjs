@@ -228,10 +228,10 @@ export default withMermaid({
           ]
         },
         {
-          text: '优惠券系统',
+          text: '基于Base32的兑换码生成算法',
           collapsed: true,
           items: [
-            { text: '优惠券系统', link: '/docs/project/优惠券系统' }
+            { text: '基于Base32的兑换码生成算法', link: '/docs/project/基于Base32的兑换码生成算法' }
           ]
         }
       ]
