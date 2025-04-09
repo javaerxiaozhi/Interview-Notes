@@ -169,7 +169,7 @@ export default withMermaid({
     },
     nav: [
       {
-        text: '面试总结',
+        text: '八股整理',
         link: '/docs/interview/'
       },
       {
@@ -228,12 +228,19 @@ export default withMermaid({
           ]
         },
         {
-          text: '基于Base32的兑换码生成算法',
+          text: '兑换码生成算法',
           collapsed: true,
           items: [
-            { text: '基于Base32的兑换码生成算法', link: '/docs/project/基于Base32的兑换码生成算法' }
+            { text: '基于Base32的兑换码生成算法', link: '/docs/project/基于Base32的兑换码生成算法' },
           ]
-        }
+        },
+        {
+          text: '秒杀场景解决方案',
+          collapsed: true,
+          items: [
+            { text: '基于LUA脚本的高性能、并发安全的优惠券领取解决方案', link: '/docs/project/基于LUA脚本的高性能、并发安全的优惠券领取解决方案' },
+          ]
+        }    
       ]
     },
 
