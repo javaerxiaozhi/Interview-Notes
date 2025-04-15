@@ -217,6 +217,13 @@ export default withMermaid({
           items: [
             { text: 'Java基础', link: '/docs/interview/Java基础' }
           ]
+        },
+        {
+          text: 'Redis',
+          collapsed: true,
+          items: [
+            { text: 'Redis', link: '/docs/interview/Redis' }
+          ]
         }
       ],
       "/docs/project/": [
