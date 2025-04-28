@@ -224,6 +224,13 @@ export default withMermaid({
           items: [
             { text: 'Redis', link: '/docs/interview/Redis' }
           ]
+        },
+        {
+          text: 'MySQL',
+          collapsed: true,
+          items: [
+            { text: 'MySQL', link: '/docs/interview/MySQL' }
+          ]
         }
       ],
       "/docs/project/": [
