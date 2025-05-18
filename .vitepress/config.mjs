@@ -231,6 +231,13 @@ export default withMermaid({
           items: [
             { text: 'MySQL', link: '/docs/interview/MySQL' }
           ]
+        },
+        {
+          text: '框架',
+          collapsed: true,
+          items: [
+            { text: '框架', link: '/docs/interview/frame' }
+          ]
         }
       ],
       "/docs/project/": [

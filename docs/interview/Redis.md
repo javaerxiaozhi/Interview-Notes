@@ -514,14 +514,14 @@ Redis的过期删除策略：**惰性删除** **+** **定期删除**两种策略
 
 Redis支持8种不同策略来选择要删除的key：
 
-- unoeviction： 不淘汰任何key，但是内存满时不允许写入新数据，默认就是这种策略。
-- uvolatile-ttl： 对设置了TTL的key，比较key的剩余TTL值，TTL越小越先被淘汰
-- uallkeys-random：对全体key ，随机进行淘汰。
-- uvolatile-random：对设置了TTL的key ，随机进行淘汰。
-- uallkeys-lru： 对全体key，基于LRU算法进行淘汰
-- uvolatile-lru： 对设置了TTL的key，基于LRU算法进行淘汰
-- uallkeys-lfu： 对全体key，基于LFU算法进行淘汰
-- uvolatile-lfu： 对设置了TTL的key，基于LFU算法进行淘汰
+- noeviction： 不淘汰任何key，但是内存满时不允许写入新数据，默认就是这种策略。
+- volatile-ttl： 对设置了TTL的key，比较key的剩余TTL值，TTL越小越先被淘汰
+- allkeys-random：对全体key ，随机进行淘汰。
+- volatile-random：对设置了TTL的key ，随机进行淘汰。
+- allkeys-lru： 对全体key，基于LRU算法进行淘汰
+- volatile-lru： 对设置了TTL的key，基于LRU算法进行淘汰
+- allkeys-lfu： 对全体key，基于LFU算法进行淘汰
+- volatile-lfu： 对设置了TTL的key，基于LFU算法进行淘汰
 
 **LRU和LFU**
 

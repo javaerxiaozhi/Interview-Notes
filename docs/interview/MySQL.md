@@ -80,7 +80,7 @@ long_query_time一般在项目中设置为2秒，如果配置的时间太长了�
 
 具体语法如下：
 
-```mysql
+```sql
 -直接在select语句之前加上关键字explain
 EXPLAIN SELECT 字段列表 FROM 表名 WHERE 条件;
 ```
@@ -260,13 +260,13 @@ B+树在B树基础上做了优化，使其更适合实现外存储索引结构�
 
 另外，这个sql语句执行时走的是聚簇索引，如果是以下这个sql，且name字段已经建立索引，那么执行时将会回表9000010次，相当恐怖。
 
-```mysql
+```sql
 select * from tb_sku where name = "a" limit 9000000,10
 ```
 
 优化思路：一般分页查询时，通过覆盖索能够比较好地提高性能，超大分页的话可以通过覆盖索引加子查询形式进行优化。
 
-```mysql
+```sql
 select * from 
 tb_sku t,
 	(select id from tb_sku order by id limit 9000000,10) a 
@@ -405,7 +405,7 @@ B+ 树索引通过前缀来定位记录。使用前置通配符（`LIKE '%xxx'` 
 
 大多数情况下，业务要求都是双端模糊匹配，那就避免不了使用前置通配符了，这种情况下，如果可以通过其他条件缩小扫描的数据范围，应在模糊匹配前增加更多限制条件，缩小模糊匹配扫描的数据范围。
 
-```mysql
+```sql
 SELECT * FROM users WHERE created_at >='2023-01-01'AND username LIKE '%John%';
 ```
 
