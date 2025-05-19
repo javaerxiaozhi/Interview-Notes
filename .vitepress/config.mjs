@@ -238,6 +238,13 @@ export default withMermaid({
           items: [
             { text: '框架', link: '/docs/interview/frame' }
           ]
+        },
+        {
+          text: '微服务',
+          collapsed: true,
+          items: [
+            { text: '微服务', link: '/docs/interview/微服务' }
+          ]
         }
       ],
       "/docs/project/": [
