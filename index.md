@@ -12,10 +12,10 @@ hero:
   actions:
     - theme: brand
       text: 建站原因
-      link: /reason
+      #link: /reason
     - theme: alt
       text: 关于我
-      link: /about
+      #link: /about
 
 features:
   - title: Knowledge grows when shared
