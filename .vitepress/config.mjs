@@ -245,6 +245,13 @@ export default withMermaid({
           items: [
             { text: '微服务', link: '/docs/interview/微服务' }
           ]
+        },
+        {
+          text: '消息中间件',
+          collapsed: true,
+          items: [
+            { text: '消息中间件', link: '/docs/interview/MQ' }
+          ]
         }
       ],
       "/docs/project/": [
