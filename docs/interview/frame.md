@@ -672,6 +672,36 @@ Spring使用三级缓存解决了大部分循环依赖问题，但有些循环�
 
 ![image-20250517222109580](imgs/image-20250517222109580.png)
 
+> **面试官**：SpringMVC的执行流程知道嘛
+>
+> **候选人**：
+>
+> 嗯，这个知道的，它分了好多步骤
+>
+> 1、用户发送出请求到前端控制器DispatcherServlet，这是一个调度中心
+>
+> 2、DispatcherServlet收到请求调用HandlerMapping（处理器映射器）。
+>
+> 3、HandlerMapping找到具体的处理器(可查找xml配置或注解配置)，生成处理器对象及处理器拦截器(如果有)，再一起返回给DispatcherServlet。
+>
+> 4、DispatcherServlet调用HandlerAdapter（处理器适配器）。
+>
+> 5、HandlerAdapter经过适配调用具体的处理器（Handler/Controller）。
+>
+> 6、Controller执行完成返回ModelAndView对象。
+>
+> 7、HandlerAdapter将Controller执行结果ModelAndView返回给DispatcherServlet。
+>
+> 8、DispatcherServlet将ModelAndView传给ViewReslover（视图解析器）。
+>
+> 9、ViewReslover解析后返回具体View（视图）。
+>
+> 10、DispatcherServlet根据View进行渲染视图（即将模型数据填充至视图中）。
+>
+> 11、DispatcherServlet响应用户。
+>
+> 当然现在的开发，基本都是前后端分离的开发的，并没有视图这些，一般都是handler中使用Response直接结果返回
+
 ## Springboot
 
 ### Springboot自动配置原理
