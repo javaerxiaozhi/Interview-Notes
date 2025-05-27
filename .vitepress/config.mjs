@@ -212,10 +212,17 @@ export default withMermaid({
     sidebar: { 
       "/docs/interview/": [
         {
-          text: 'Java',
+          text: 'Java基础',
           collapsed: true,
           items: [
             { text: 'Java基础', link: '/docs/interview/Java基础' }
+          ]
+        },
+        {
+          text: '多线程',
+          collapsed: true,
+          items: [
+            { text: '多线程', link: '/docs/interview/JUC' }
           ]
         },
         {
