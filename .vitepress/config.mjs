@@ -226,6 +226,13 @@ export default withMermaid({
           ]
         },
         {
+          text: 'JVM',
+          collapsed: true,
+          items: [
+            { text: 'JVM', link: '/docs/interview/JVM' }
+          ]
+        },
+        {
           text: 'Redis',
           collapsed: true,
           items: [
