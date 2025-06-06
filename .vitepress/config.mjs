@@ -266,7 +266,14 @@ export default withMermaid({
           items: [
             { text: '消息中间件', link: '/docs/interview/MQ' }
           ]
-        }
+        },
+        {
+          text: '设计场景',
+          collapsed: true,
+          items: [
+            { text: '设计场景', link: '/docs/interview/design' }
+          ]
+        },
       ],
       "/docs/project/": [
         {
