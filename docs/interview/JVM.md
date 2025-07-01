@@ -952,11 +952,10 @@ public class Demo {
 
 ![image-20230506131640893](imgs/image-20230506131640893.png)
 
-- MinorGC【young GC】发生在新生代的垃圾回收，暂停时间短（STW）
-
-- Mixed GC 新生代 + 老年代部分区域的垃圾回收，G1 收集器特有
-
-- FullGC： 新生代 + 老年代完整垃圾回收，暂停时间长（STW），应尽力避免？
+- MinorGC【young GC】 发生在新生代的垃圾回收，暂停时间短（STW）
+- Major GC  老年代区域的垃圾回收，Major GC速度比Minor GC慢，频率较低。
+- FullGC  新生代 + 老年代完整垃圾回收，暂停时间长（STW），应尽力避免
+- Mixed GC  老年代 + 新生代 部分区域的垃圾回收，G1 收集器特有
 
 >名词解释：
 >
@@ -1016,7 +1015,7 @@ CMS全称 Concurrent Mark Sweep，是一款并发的、使用标记-清除算法
 
 ![image-20230506154117857](imgs/image-20230506154117857.png)
 
-![image-20230506154107944](imgs/image-20230506154107944.png)            zx   Zzx c
+![image-20230506154107944](imgs/image-20230506154107944.png)           
 
 #### 详细聊一下G1垃圾回收器
 
